@@ -6,10 +6,10 @@ require('./errorHandler');
 
 const env = require('dotenv').config();
 
-port = process.env;
+const port = process.env.PORT;
 
 app.listen(port, () => {
-    console.log('Server is live');
+    console.log(`Server is live on port ${port}`);
 });
 
 
